@@ -1,1 +1,3 @@
 Linguagem de marcação de texto para desenvolvimento de páginas web;Linguagem de formatação de aparência para desenvolvimento de pagina web; Linguagens de comportamento para plataformas web(front-end):variáveis, expressões aritméticas, relacionais e lógicas, estruturas de controle condicional e repetição, estruturas de dados unidimensionais e multidimensionais, Sub-rotinas
+
+A abordagem teórica do conteúdo se dará por meio de aulas expositivas e dialogadas ministradas em laboratório de informática. A ênfase destas aulas está pautada em explicações conceituais. O conteúdo poderá ser explo
