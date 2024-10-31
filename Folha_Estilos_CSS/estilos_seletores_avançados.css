@@ -1,0 +1,32 @@
+input[type="password"]{
+    border: 2px red;
+}
+
+p[title]:hover{
+    background-color:yellow, 
+}
+
+ul li:first-child{
+    font-weight:bold;
+}
+
+ul li:last-child{
+    color:blue
+}
+/*Pseudo elemento ::first-letter para estilizar a primeira letra do parágrafo*/
+p::first-letter{
+    font-size: 200%;
+
+    color:green
+}
+
+div.texto::after{
+    content: "adicionado via codigo css";
+    color:red
+
+}
+/*Pseudo-elemento ::before em um <span> dentro de .texto*/
+.texto span::before{
+    content: "texto";
+    color:orange
+}
