@@ -41,8 +41,31 @@ function fazerJogada(indiceCelula){
 
         atualizarPontuacoes(jogadorAtual);
 
+        setTimeout(()=>{
+            alert(`${jogadorAtual} venceu!! `)
+        }, 100);
+
+        return
+
+    }
+    if (verificarEmpate()){
+        jogoAtivo = false;
+        atualizarPontuacoes("empate");
+        setTimeout(()=>{
+            alert("Empate!!")
+        reiniciarJogo();       
+        }, 100);
+        return;
+    }
+    jogadorAtual = jogadorAtual === "X" ? "0" : "X";
+    if (jogadorAtual === "0" && jogoAtivo){
+        setTimeout(() => {
+            movimentoComputador():
+        }, 500);
     }
 };
+
+    
 
 
 function renderizarTabuleiro(){
@@ -97,4 +120,18 @@ function renderizarPontuacoes(){
     document.getElementById("pontuacao-Jogador").textContent =pontuacaoJogador
     document.getElementById("pontuacao-Computador").textContent =pontuacaoComputador
     document.getElementById("pontuacao-Empate").textContent =pontuacaoEmpate
+}
+
+function verificarEmpate(){
+    return !tabuleiro.includes('');
+}
+
+function reiniciarJogo{
+    tabuleiro    = ['','','','','','','','','',];
+
+    jogadorAtual = "X";
+
+    jogoAtivo    = true;
+
+    renderizarTabuleiro();
 }
